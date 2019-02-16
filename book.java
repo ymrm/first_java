@@ -3,13 +3,12 @@ class Book{ //クラスBookの宣言
 	String title;
 	private int price;
 //	private float price_f;
-//	private float yenprice;
+	private float yenprice;
 
-	Book(String t, int p){
+	Book(String t, int p, float p2){
 	title = t;
 	price = p;
-//	price_f = p2;
-//    yenprice = price_f * 120;
+    yenprice = p2 * 120.47f;
 	}
 
 	public String getTitle(){ //題名の取得
@@ -20,7 +19,7 @@ class Book{ //クラスBookの宣言
 		return price;
 	}
 
-//	public float doublegetYenPrice(){ //価格の取得
-//		return yenprice;
-//	}
+	public float doublegetYenPrice(){ //価格の取得
+		return yenprice;
+	}
 }
