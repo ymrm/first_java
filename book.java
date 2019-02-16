@@ -1,4 +1,4 @@
-/* Book */
+ /* Book */
 class Book{ //クラスBookの宣言
 	String title;
 	private int price;
@@ -9,6 +9,10 @@ class Book{ //クラスBookの宣言
 	title = t;
 	price = p;
     yenprice = p2 * 120.47f;
+	}
+
+	public void setPrice(int p){ //priceの書き換え
+		price = p;
 	}
 
 	public String getTitle(){ //題名の取得
@@ -22,4 +26,5 @@ class Book{ //クラスBookの宣言
 	public float doublegetYenPrice(){ //価格の取得
 		return yenprice;
 	}
+
 }
