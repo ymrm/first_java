@@ -1,15 +1,21 @@
  /* Book */
 class Book{ //クラスBookの宣言
 	String title;
-	private int price;
+	int price;
 //	private float price_f;
 	private float yenprice;
-	private int year;
+	int year;
 
 	Book(String t, int p, float p2){
 	title = t;
 	price = p;
     yenprice = p2 * 120.47f;
+	}
+
+	Book(){
+		this.title = "Soft drink book"; //thisはこのインスタンスという意味
+		this.price = 20;
+		this.year = 1984;
 	}
 
 	public void setYear(int y){ //西暦の取得	
