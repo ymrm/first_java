@@ -18,6 +18,15 @@ class Book{ //クラスBookの宣言
 		this.year = 1984;
 	}
 
+	public boolean isCheaperThan(int x){
+		if (x > price){ //xドルより安い場合のみ
+//		return price;
+		return true;
+		}
+	return false;
+	}
+
+
 	public void setYear(int y){ //西暦の取得	
 		year = y;
 	}
