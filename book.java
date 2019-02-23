@@ -14,8 +14,9 @@ class Book{ //クラスBookの宣言
     yenprice = p2 * 120.47f;
 	}
 
-	Book(String keyword){//配列の要素を設定するコンストラクタ
-	keywords[0] = keyword;
+	Book(String keyword0,String keyword1){//配列の要素を設定するコンストラクタ
+	keywords[0] = keyword0;
+	keywords[1] = keyword1;
 	}
 
 	Book(){
@@ -32,6 +33,16 @@ class Book{ //クラスBookの宣言
 	return false;
 	}
 
+
+
+	public boolean ContainsInKeywords(String query){
+		//	for(int i = 0; i < keywords.length; i++){
+					if (keywords[0].contains(query)){ //xドルより安い場合のみ
+							return true;
+					}
+					return false;
+		//	}			
+	}
 
 	public void setYear(int y){ //西暦の取得	
 		year = y;
