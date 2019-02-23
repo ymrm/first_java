@@ -6,8 +6,7 @@ class Book{ //クラスBookの宣言
 	private float yenprice;
 	int year;
     String keyword;
-    String keywords[]; //検索時のキーワードを格納する配列
-	
+    String keywords[] = new String[3]; //検索時のキーワードを格納する配列
 
 	Book(String t, int p, float p2){
 	title = t;
@@ -18,6 +17,7 @@ class Book{ //クラスBookの宣言
 	Book(String keyword){//配列の要素を設定するコンストラクタ
 	keywords[0] = keyword;
 	}
+
 	Book(){
 		this.title = "Soft drink book"; //thisはこのインスタンスという意味
 		this.price = 20;
