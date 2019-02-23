@@ -2,6 +2,7 @@
 public class kihon9{
 		public static void main(String [] args ){
 
+
 				//コマンドラインで引数を得る
 				//System.out.println(args[0]); //文字列の表示
 				int threshold = Integer.parseInt(args[0]);//整数の格納
@@ -11,12 +12,20 @@ public class kihon9{
 
 				System.out.println(Book_keyword.keywords[0]+"と"+ Book_keyword.keywords[1]  +"が入力されました"); //文字列の表示	
 				/*Bookクラスからひとつめのインスタンスを生成して利用 */
+
+
+			    //String query;	
+				//query = "book";
+				boolean contains;	
+				contains = ContainsInKeywords("book"); //クエリbookが入力した検索語に含まれるかどうか
+
+				//System.out.println(contains);
+
+
 				Book mybook = new Book("How to cook sushi",55,55f);
 				int myyear;
 				myyear=1996;	
-
-
-
+				
 				boolean mybook_xcheaper;
 				mybook_xcheaper = mybook.isCheaperThan(threshold);
 				if (mybook_xcheaper == true){ //50より安ければ表示

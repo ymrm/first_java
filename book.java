@@ -35,13 +35,14 @@ class Book{ //クラスBookの宣言
 
 
 
-	public boolean ContainsInKeywords(String query){
-		//	for(int i = 0; i < keywords.length; i++){
-					if (keywords[0].contains(query)){ //xドルより安い場合のみ
+	boolean ContainsInKeywords(String query){
+			for(int i = 0; i < keywords.length; i++){
+					if (keywords[i].contains(query)){ //xドルより安い場合のみ
 							return true;
+				//				break;
 					}
-					return false;
-		//	}			
+			}			
+			return false;
 	}
 
 	public void setYear(int y){ //西暦の取得	
