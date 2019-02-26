@@ -34,41 +34,38 @@ class Book{ //クラスBookの宣言
 
 
 	public boolean ContainsInKeywords(String query){
-		//	for(int i = 0; i < keywords.length; i++){
-String kk;
-kk = "kk";
-					//if (keywords[1].contains(query)){
-					if (kk.contains(query)){
-					//if (kk.contains("a")){ false
-					//if (kk.contains("k")){ true
-							return true;
-					}else{
-	//		}
-		return false;}
+		for(int i = 0; i < keywords.length; i++){
+			String kk;
+			kk = "kk";
+			if (kk.contains(query)){
+				return true; //trueにならない。。。。。
+			}
+		}
+		return false;
 	}
 
-	public void setYear(int y){ //西暦の取得	
-		year = y;
-	}
+		public void setYear(int y){ //西暦の取得	
+			year = y;
+		}
 
-	public int getYear(){ //西暦の取得	
-		return year;
-	}
+		public int getYear(){ //西暦の取得	
+			return year;
+		}
 
-	public void setPrice(int p){ //priceの書き換え
-		price = p;
-	}
+		public void setPrice(int p){ //priceの書き換え
+			price = p;
+		}
 
-	public String getTitle(){ //題名の取得
-		return title;
-	}
+		public String getTitle(){ //題名の取得
+			return title;
+		}
 
-	public int getPrice(){ //価格の取得
-		return price;
-	}
+		public int getPrice(){ //価格の取得
+			return price;
+		}
 
-	public float doublegetYenPrice(){ //価格の取得
-		return yenprice;
-	}
+		public float doublegetYenPrice(){ //価格の取得
+			return yenprice;
+		}
 
-}
+	}

@@ -18,7 +18,7 @@ public class kihon9{
 				int myyear;
 				myyear=1996;	
 				
-				if (mybook.ContainsInKeywords(args[1])){
+				if (mybook.ContainsInKeywords(args[0])){
 					System.out.println("true");
 				}else{
 					System.out.println("false");
