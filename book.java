@@ -38,7 +38,7 @@ class Book{ //クラスBookの宣言
 String kk;
 kk = "kk";
 					//if (keywords[1].contains(query)){
-					if (kk.contains("a")){
+					if (kk.contains(query)){
 					//if (kk.contains("a")){ false
 					//if (kk.contains("k")){ true
 							return true;
