@@ -14,21 +14,22 @@ public class kihon9{
 				/*Bookクラスからひとつめのインスタンスを生成して利用 */
 
 
-			    //String query;	
-				//query = "book";
-				boolean contains;	
-				contains = ContainsInKeywords("book"); //クエリbookが入力した検索語に含まれるかどうか
-
-				//System.out.println(contains);
-
-
 				Book mybook = new Book("How to cook sushi",55,55f);
 				int myyear;
 				myyear=1996;	
 				
+				boolean mybook_contains;
+				mybook_contains = mybook.ContainsInKeywords("a");
+				if (mybook.ContainsInKeywords("a")){
+					System.out.println("true");
+				}else{
+					System.out.println("false");
+				}
+
+
 				boolean mybook_xcheaper;
 				mybook_xcheaper = mybook.isCheaperThan(threshold);
-				if (mybook_xcheaper == true){ //50より安ければ表示
+				if (mybook_xcheaper){ //50より安ければ表示
 
 					if (mybook.title.contains(Book_keyword.keywords[0]) && mybook.title.contains(Book_keyword.keywords[1])){
 							System.out.println("my book title = " + mybook.title);

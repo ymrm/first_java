@@ -2,7 +2,6 @@
 class Book{ //クラスBookの宣言
 	String title;
 	int price;
-//	private float price_f;
 	private float yenprice;
 	int year;
     String keyword;
@@ -11,7 +10,7 @@ class Book{ //クラスBookの宣言
 	Book(String t, int p, float p2){
 	title = t;
 	price = p;
-    yenprice = p2 * 120.47f;
+	yenprice = p2 * 120.47f;
 	}
 
 	Book(String keyword0,String keyword1){//配列の要素を設定するコンストラクタ
@@ -27,7 +26,6 @@ class Book{ //クラスBookの宣言
 
 	public boolean isCheaperThan(int x){
 		if (x > price){ //xドルより安い場合のみ
-//		return price;
 		return true;
 		}
 	return false;
@@ -35,14 +33,18 @@ class Book{ //クラスBookの宣言
 
 
 
-	boolean ContainsInKeywords(String query){
-			for(int i = 0; i < keywords.length; i++){
-					if (keywords[i].contains(query)){ //xドルより安い場合のみ
+	public boolean ContainsInKeywords(String query){
+		//	for(int i = 0; i < keywords.length; i++){
+String kk;
+kk = "kk";
+					//if (keywords[1].contains(query)){
+					if (kk.contains("a")){
+					//if (kk.contains("a")){ false
+					//if (kk.contains("k")){ true
 							return true;
-				//				break;
-					}
-			}			
-			return false;
+					}else{
+	//		}
+		return false;}
 	}
 
 	public void setYear(int y){ //西暦の取得	

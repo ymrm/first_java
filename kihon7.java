@@ -1,4 +1,4 @@
-/* sample2 */
+/* kihon7 */
 public class kihon7{
 		public static void main(String [] args ){
 
@@ -7,7 +7,7 @@ public class kihon7{
 				int threshold = Integer.parseInt(args[0]);//整数の格納
 				System.out.println(threshold+"ドルが入力されました"); //整数の表示	
 
-				Book Book_keyword = new Book(args[1]); //引数を1つとるBookコンストラクタに入力された引数を与える//引数を一つとるコンストラクタは配列kwywordsに文字列を格納するため、与えた日キスが配列に格納される
+				Book_keyword = new Book(args[1]); //引数を1つとるBookコンストラクタに入力された引数を与える//引数を一つとるコンストラクタは配列kwywordsに文字列を格納するため、与えた日が配列に格納される
 
 				System.out.println(Book_keyword.keywords[0]+"が入力されました"); //文字列の表示	
 				/*Bookクラスからひとつめのインスタンスを生成して利用 */
