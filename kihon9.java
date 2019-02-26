@@ -9,6 +9,11 @@ public class kihon9{
 				System.out.println(threshold+"ドルが入力されました"); //整数の表示	
 
 				Book Book_keyword = new Book(args[1],args[2]); //引数を1つとるBookコンストラクタに入力された引数を与える//引数を一つとるコンストラクタは配列kwywordsに文字列を格納するため、与えた日キスが配列に格納される
+				if (Book_keyword.ContainsInKeywords("k")){
+					System.out.println("true");
+				}else{
+					System.out.println("false");
+				}
 
 				System.out.println(Book_keyword.keywords[0]+"と"+ Book_keyword.keywords[1]  +"が入力されました"); //文字列の表示	
 				/*Bookクラスからひとつめのインスタンスを生成して利用 */
@@ -17,12 +22,7 @@ public class kihon9{
 				Book mybook = new Book("How to cook sushi",55,55f);
 				int myyear;
 				myyear=1996;	
-				
-				if (mybook.ContainsInKeywords(args[0])){
-					System.out.println("true");
-				}else{
-					System.out.println("false");
-				}
+
 
 
 				boolean mybook_xcheaper;
@@ -30,13 +30,13 @@ public class kihon9{
 				if (mybook_xcheaper){ //50より安ければ表示
 
 					if (mybook.title.contains(Book_keyword.keywords[0]) && mybook.title.contains(Book_keyword.keywords[1])){
-							System.out.println("my book title = " + mybook.title);
-							System.out.println("my book price = " + mybook.getPrice());
-							System.out.println("my book yen = " + mybook.doublegetYenPrice());
-							mybook.setPrice(44);
-							System.out.println("my book price = " + mybook.getPrice());
-							mybook.setYear(myyear);
-							System.out.println("my book year = " + mybook.getYear());
+						System.out.println("my book title = " + mybook.title);
+						System.out.println("my book price = " + mybook.getPrice());
+						System.out.println("my book yen = " + mybook.doublegetYenPrice());
+						mybook.setPrice(44);
+						System.out.println("my book price = " + mybook.getPrice());
+						mybook.setYear(myyear);
+						System.out.println("my book year = " + mybook.getYear());
 					}
 				}
 				/* Bookクラスからふたつめのインスタンスを生成して利用 */

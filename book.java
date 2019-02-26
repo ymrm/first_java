@@ -5,7 +5,7 @@ class Book{ //クラスBookの宣言
 	private float yenprice;
 	int year;
     String keyword;
-    String keywords[] = new String[3]; //検索時のキーワードを格納する配列
+    String keywords[] = new String[2]; //検索時のキーワードを格納する配列
 
 	Book(String t, int p, float p2){
 	title = t;
@@ -33,39 +33,36 @@ class Book{ //クラスBookの宣言
 
 
 
-	public boolean ContainsInKeywords(String query){
-		for(int i = 0; i < keywords.length; i++){
-			String kk;
-			kk = "kk";
-			if (kk.contains(query)){
-				return true; //trueにならない。。。。。
+	public boolean ContainsInKeywords(String query){ //検索語の検索
+			for(int i = 0; i < keywords.length; i++){
+				if (keywords[i].contains(query)){
+					return true;
+				}
 			}
-		}
-		return false;
-	}
+			return false;}
 
-		public void setYear(int y){ //西暦の取得	
-			year = y;
-		}
+public void setYear(int y){ //西暦の取得	
+	year = y;
+}
 
-		public int getYear(){ //西暦の取得	
-			return year;
-		}
+public int getYear(){ //西暦の取得	
+	return year;
+}
 
-		public void setPrice(int p){ //priceの書き換え
-			price = p;
-		}
+public void setPrice(int p){ //priceの書き換え
+	price = p;
+}
 
-		public String getTitle(){ //題名の取得
-			return title;
-		}
+public String getTitle(){ //題名の取得
+	return title;
+}
 
-		public int getPrice(){ //価格の取得
-			return price;
-		}
+public int getPrice(){ //価格の取得
+	return price;
+}
 
-		public float doublegetYenPrice(){ //価格の取得
-			return yenprice;
-		}
+public float doublegetYenPrice(){ //価格の取得
+	return yenprice;
+}
 
-	}
+}
