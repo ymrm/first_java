@@ -7,10 +7,9 @@ class Book{ //クラスBookの宣言
     String keyword;
     String keywords[] = new String[2]; //検索時のキーワードを格納する配列
 
-	Book(String t, int p, float p2){
+	Book(String t, int p){
 	title = t;
 	price = p;
-	yenprice = p2 * 120.47f;
 	}
 
 	Book(String keyword0,String keyword1){//配列の要素を設定するコンストラクタ
@@ -61,26 +60,8 @@ public int getPrice(){ //価格の取得
 	return price;
 }
 
-public float doublegetYenPrice(){ //価格の取得
-	return yenprice;
-}
 
 }
 
 
-class ssss{
-public static void main(String[] args){
-Book[] books;
-books = new Book[3];
-books[0] = new Book();
-books[1] = new Book();
-books[0].title = "hon";
-books[0].price = 20; 
-books[0].year = 2000;
-
-books[1].title = "hon2";
-books[1].price = 20; 
-books[1].year = 2000;
-}
-}
 
